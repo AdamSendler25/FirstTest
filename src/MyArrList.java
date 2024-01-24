@@ -1,4 +1,6 @@
-public class MyArrList {
+public class
+MyArrList {
+    //comment
     int i = 0;
     int counter = 0;
     int[] arr = new int[10];
