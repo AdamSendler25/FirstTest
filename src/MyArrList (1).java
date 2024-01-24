@@ -1,15 +1,27 @@
+
 public class MyArrList {
+
+    /**
+     * что за магическая переменная i - норм название ей придумай
+     */
     int i = 0;
     int counter = 0;
+
     int[] arr = new int[10];
+
+    /**
+     * что за магическая переменная j - норм название ей придумай
+     */
     int j = 0;
 
     public void add(int var) {
 
-
+        //опять создаешь oldarr каждый раз когда добавляешь новый элемент
         int[] oldarr = new int[i];
         if (i == arr.length) {
+            //ты тут зануляешь всегда j - зачем ее в переменную класса?
             j = 0;
+            //перепиши на цикл фор будет читабельнее и уберешь int j = 0; в переменной класса
             while (j < oldarr.length) {
                 oldarr[j] = arr[j];
                 j++;
@@ -17,6 +29,8 @@ public class MyArrList {
             arr = new int[i + 1];
 
             i++;
+
+            // тоже самое. перепиши на цикл фор будет читабельнее и уберешь int j = 0; в переменной класса
             j = 0;
             while (j < oldarr.length) {
 
@@ -25,6 +39,7 @@ public class MyArrList {
                 j++;
             }
         } else {
+            // у тебя эта операциия и if и в else, убери блок else и выполняй i++; перед arr[i - 1] = var
             i++;
         }
 

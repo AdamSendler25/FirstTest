@@ -5,9 +5,19 @@ public class Main {
     public static void main(String[] args) {
       MyArrList MyArr=new MyArrList();
       MyArr.add(1);
-     // MyArr.add(2);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(5);
+      MyArr.add(1);
+      MyArr.add(1);
+      MyArr.add(2);
      // MyArr.add(1,5);
-        MyArr.add(3);
+        MyArr.add(345);
       //  MyArr.add(3,7);
      // MyArr.add(3,8);
         MyArr.add(3);
